@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44928DC23F2682600D85A48 /* AppDelegate.swift */; };
+		B44928E423F2682600D85A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44928E223F2682600D85A48 /* Main.storyboard */; };
+		B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B44928E523F2682600D85A48 /* MouiLotto.xcdatamodeld */; };
+		B44928E923F2682900D85A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44928E823F2682900D85A48 /* Assets.xcassets */; };
+		B44928EC23F2682900D85A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44928EA23F2682900D85A48 /* LaunchScreen.storyboard */; };
+		B44928F723F2682900D85A48 /* MouiLottoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44928F623F2682900D85A48 /* MouiLottoTests.swift */; };
+		B449290223F2682900D85A48 /* MouiLottoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449290123F2682900D85A48 /* MouiLottoUITests.swift */; };
+		B449291123F2688700D85A48 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B449291023F2688700D85A48 /* RxSwift */; };
+		B449291323F2688700D85A48 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B449291223F2688700D85A48 /* RxCocoa */; };
+		B449291623F268DC00D85A48 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = B449291523F268DC00D85A48 /* SideMenu */; };
+		B449291E23F2697D00D85A48 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B449291D23F2697D00D85A48 /* KakaoOpenSDK.framework */; };
+		B449292223F26C9700D85A48 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292123F26C9700D85A48 /* MainViewController.swift */; };
+		B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292323F26D7100D85A48 /* LoginViewController.swift */; };
+		B449292623F2705900D85A48 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292523F2705900D85A48 /* AlertExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B44928F323F2682900D85A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44928D123F2682600D85A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44928D823F2682600D85A48;
+			remoteInfo = MouiLotto;
+		};
+		B44928FE23F2682900D85A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44928D123F2682600D85A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44928D823F2682600D85A48;
+			remoteInfo = MouiLotto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B44928D923F2682600D85A48 /* MouiLotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouiLotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44928DC23F2682600D85A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B44928E323F2682600D85A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B44928E623F2682600D85A48 /* MouiLotto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MouiLotto.xcdatamodel; sourceTree = "<group>"; };
+		B44928E823F2682900D85A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B44928EB23F2682900D85A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B44928ED23F2682900D85A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44928F223F2682900D85A48 /* MouiLottoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouiLottoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44928F623F2682900D85A48 /* MouiLottoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouiLottoTests.swift; sourceTree = "<group>"; };
+		B44928F823F2682900D85A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44928FD23F2682900D85A48 /* MouiLottoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouiLottoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B449290123F2682900D85A48 /* MouiLottoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouiLottoUITests.swift; sourceTree = "<group>"; };
+		B449290323F2682900D85A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B449291D23F2697D00D85A48 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = Link/KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		B449292123F26C9700D85A48 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B449292323F26D7100D85A48 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B449292523F2705900D85A48 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B44928D623F2682600D85A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B449291323F2688700D85A48 /* RxCocoa in Frameworks */,
+				B449291E23F2697D00D85A48 /* KakaoOpenSDK.framework in Frameworks */,
+				B449291623F268DC00D85A48 /* SideMenu in Frameworks */,
+				B449291123F2688700D85A48 /* RxSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44928EF23F2682900D85A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44928FA23F2682900D85A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B44928D023F2682600D85A48 = {
+			isa = PBXGroup;
+			children = (
+				B44928DB23F2682600D85A48 /* MouiLotto */,
+				B44928F523F2682900D85A48 /* MouiLottoTests */,
+				B449290023F2682900D85A48 /* MouiLottoUITests */,
+				B44928DA23F2682600D85A48 /* Products */,
+				B449291C23F2697D00D85A48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B44928DA23F2682600D85A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B44928D923F2682600D85A48 /* MouiLotto.app */,
+				B44928F223F2682900D85A48 /* MouiLottoTests.xctest */,
+				B44928FD23F2682900D85A48 /* MouiLottoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B44928DB23F2682600D85A48 /* MouiLotto */ = {
+			isa = PBXGroup;
+			children = (
+				B449291823F2692600D85A48 /* Networks */,
+				B449291B23F2694100D85A48 /* View Models */,
+				B449291723F2690400D85A48 /* Models */,
+				B449291A23F2693600D85A48 /* Views */,
+				B44928DC23F2682600D85A48 /* AppDelegate.swift */,
+				B44928E223F2682600D85A48 /* Main.storyboard */,
+				B44928E823F2682900D85A48 /* Assets.xcassets */,
+				B44928EA23F2682900D85A48 /* LaunchScreen.storyboard */,
+				B44928ED23F2682900D85A48 /* Info.plist */,
+				B44928E523F2682600D85A48 /* MouiLotto.xcdatamodeld */,
+			);
+			path = MouiLotto;
+			sourceTree = "<group>";
+		};
+		B44928F523F2682900D85A48 /* MouiLottoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B44928F623F2682900D85A48 /* MouiLottoTests.swift */,
+				B44928F823F2682900D85A48 /* Info.plist */,
+			);
+			path = MouiLottoTests;
+			sourceTree = "<group>";
+		};
+		B449290023F2682900D85A48 /* MouiLottoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B449290123F2682900D85A48 /* MouiLottoUITests.swift */,
+				B449290323F2682900D85A48 /* Info.plist */,
+			);
+			path = MouiLottoUITests;
+			sourceTree = "<group>";
+		};
+		B449291723F2690400D85A48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B449292523F2705900D85A48 /* AlertExtension.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B449291823F2692600D85A48 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		B449291A23F2693600D85A48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B449292123F26C9700D85A48 /* MainViewController.swift */,
+				B449292323F26D7100D85A48 /* LoginViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B449291B23F2694100D85A48 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B449291C23F2697D00D85A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B449291D23F2697D00D85A48 /* KakaoOpenSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B44928D823F2682600D85A48 /* MouiLotto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B449290623F2682900D85A48 /* Build configuration list for PBXNativeTarget "MouiLotto" */;
+			buildPhases = (
+				B44928D523F2682600D85A48 /* Sources */,
+				B44928D623F2682600D85A48 /* Frameworks */,
+				B44928D723F2682600D85A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MouiLotto;
+			packageProductDependencies = (
+				B449291023F2688700D85A48 /* RxSwift */,
+				B449291223F2688700D85A48 /* RxCocoa */,
+				B449291523F268DC00D85A48 /* SideMenu */,
+			);
+			productName = MouiLotto;
+			productReference = B44928D923F2682600D85A48 /* MouiLotto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B44928F123F2682900D85A48 /* MouiLottoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B449290923F2682900D85A48 /* Build configuration list for PBXNativeTarget "MouiLottoTests" */;
+			buildPhases = (
+				B44928EE23F2682900D85A48 /* Sources */,
+				B44928EF23F2682900D85A48 /* Frameworks */,
+				B44928F023F2682900D85A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44928F423F2682900D85A48 /* PBXTargetDependency */,
+			);
+			name = MouiLottoTests;
+			productName = MouiLottoTests;
+			productReference = B44928F223F2682900D85A48 /* MouiLottoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B44928FC23F2682900D85A48 /* MouiLottoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B449290C23F2682900D85A48 /* Build configuration list for PBXNativeTarget "MouiLottoUITests" */;
+			buildPhases = (
+				B44928F923F2682900D85A48 /* Sources */,
+				B44928FA23F2682900D85A48 /* Frameworks */,
+				B44928FB23F2682900D85A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44928FF23F2682900D85A48 /* PBXTargetDependency */,
+			);
+			name = MouiLottoUITests;
+			productName = MouiLottoUITests;
+			productReference = B44928FD23F2682900D85A48 /* MouiLottoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B44928D123F2682600D85A48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = SungJu;
+				TargetAttributes = {
+					B44928D823F2682600D85A48 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					B44928F123F2682900D85A48 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B44928D823F2682600D85A48;
+					};
+					B44928FC23F2682900D85A48 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B44928D823F2682600D85A48;
+					};
+				};
+			};
+			buildConfigurationList = B44928D423F2682600D85A48 /* Build configuration list for PBXProject "MouiLotto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B44928D023F2682600D85A48;
+			packageReferences = (
+				B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				B449291423F268DC00D85A48 /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
+			productRefGroup = B44928DA23F2682600D85A48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B44928D823F2682600D85A48 /* MouiLotto */,
+				B44928F123F2682900D85A48 /* MouiLottoTests */,
+				B44928FC23F2682900D85A48 /* MouiLottoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B44928D723F2682600D85A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44928EC23F2682900D85A48 /* LaunchScreen.storyboard in Resources */,
+				B44928E923F2682900D85A48 /* Assets.xcassets in Resources */,
+				B44928E423F2682600D85A48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44928F023F2682900D85A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44928FB23F2682900D85A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B44928D523F2682600D85A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */,
+				B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */,
+				B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */,
+				B449292623F2705900D85A48 /* AlertExtension.swift in Sources */,
+				B449292223F26C9700D85A48 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44928EE23F2682900D85A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44928F723F2682900D85A48 /* MouiLottoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44928F923F2682900D85A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B449290223F2682900D85A48 /* MouiLottoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B44928F423F2682900D85A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44928D823F2682600D85A48 /* MouiLotto */;
+			targetProxy = B44928F323F2682900D85A48 /* PBXContainerItemProxy */;
+		};
+		B44928FF23F2682900D85A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44928D823F2682600D85A48 /* MouiLotto */;
+			targetProxy = B44928FE23F2682900D85A48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B44928E223F2682600D85A48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44928E323F2682600D85A48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B44928EA23F2682900D85A48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44928EB23F2682900D85A48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B449290423F2682900D85A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B449290523F2682900D85A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B449290723F2682900D85A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X77ENQ2H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Link",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Link";
+				INFOPLIST_FILE = MouiLotto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouilotto.MouiLotto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Link/KakaoOpenSDK-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B449290823F2682900D85A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X77ENQ2H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Link",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Link";
+				INFOPLIST_FILE = MouiLotto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouilotto.MouiLotto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Link/KakaoOpenSDK-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B449290A23F2682900D85A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X77ENQ2H;
+				INFOPLIST_FILE = MouiLottoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouilotto.MouiLottoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouiLotto.app/MouiLotto";
+			};
+			name = Debug;
+		};
+		B449290B23F2682900D85A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X77ENQ2H;
+				INFOPLIST_FILE = MouiLottoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouilotto.MouiLottoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouiLotto.app/MouiLotto";
+			};
+			name = Release;
+		};
+		B449290D23F2682900D85A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X77ENQ2H;
+				INFOPLIST_FILE = MouiLottoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouilotto.MouiLottoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MouiLotto;
+			};
+			name = Debug;
+		};
+		B449290E23F2682900D85A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X77ENQ2H;
+				INFOPLIST_FILE = MouiLottoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouilotto.MouiLottoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MouiLotto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B44928D423F2682600D85A48 /* Build configuration list for PBXProject "MouiLotto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B449290423F2682900D85A48 /* Debug */,
+				B449290523F2682900D85A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B449290623F2682900D85A48 /* Build configuration list for PBXNativeTarget "MouiLotto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B449290723F2682900D85A48 /* Debug */,
+				B449290823F2682900D85A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B449290923F2682900D85A48 /* Build configuration list for PBXNativeTarget "MouiLottoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B449290A23F2682900D85A48 /* Debug */,
+				B449290B23F2682900D85A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B449290C23F2682900D85A48 /* Build configuration list for PBXNativeTarget "MouiLottoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B449290D23F2682900D85A48 /* Debug */,
+				B449290E23F2682900D85A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		B449291423F268DC00D85A48 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.4.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B449291023F2688700D85A48 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		B449291223F2688700D85A48 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B449291523F268DC00D85A48 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B449291423F268DC00D85A48 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		B44928E523F2682600D85A48 /* MouiLotto.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B44928E623F2682600D85A48 /* MouiLotto.xcdatamodel */,
+			);
+			currentVersion = B44928E623F2682600D85A48 /* MouiLotto.xcdatamodel */;
+			path = MouiLotto.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B44928D123F2682600D85A48 /* Project object */;
+}

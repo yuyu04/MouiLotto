@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aa9-FZ-J4y">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="0vi-wV-mam">
+            <objects>
+                <navigationController storyboardIdentifier="main" id="ZfE-HH-Htk" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ucw-eu-mAz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jYi-dn-OEo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwM-ha-GDt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1003" y="155"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MouiLotto" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RRY-Y3-e5L"/>
+                        <viewControllerLayoutGuide type="bottom" id="nun-xR-rPj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ta8-K2-DDg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-307" y="155"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FZ6-Kq-dk3">
+            <objects>
+                <navigationController storyboardIdentifier="navigator" id="aa9-FZ-J4y" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jkH-zj-gfx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="k3e-XK-Tt6" kind="show" id="FAJ-gl-Zf1"/>
+                        <segue destination="ZfE-HH-Htk" kind="show" id="cpw-eD-efN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYa-Gy-9zX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1710" y="552"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="fz0-bW-WCd">
+            <objects>
+                <viewController storyboardIdentifier="login" id="k3e-XK-Tt6" customClass="LoginViewController" customModule="MouiLotto" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PqX-R3-KDz"/>
+                        <viewControllerLayoutGuide type="bottom" id="q0v-LL-skL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lCC-7o-wom">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmf-1h-9fs" customClass="KOLoginButton">
+                                <rect key="frame" x="50" y="742" width="315" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="2Wx-b3-jxT"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="login:" destination="k3e-XK-Tt6" eventType="touchUpInside" id="Aum-Ki-6HB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kmf-1h-9fs" secondAttribute="trailing" constant="49" id="1I5-aw-Hlz"/>
+                            <constraint firstItem="q0v-LL-skL" firstAttribute="top" secondItem="Kmf-1h-9fs" secondAttribute="bottom" constant="23" id="LPD-Q2-kmI"/>
+                            <constraint firstItem="Kmf-1h-9fs" firstAttribute="leading" secondItem="lCC-7o-wom" secondAttribute="leading" constant="50" id="sLe-aV-Ysf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dku-Gc-yqi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afq-ke-jXJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-951" y="831"/>
+        </scene>
+    </scenes>
+</document>
