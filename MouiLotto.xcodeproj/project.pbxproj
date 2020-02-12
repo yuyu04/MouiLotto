@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B424478C23F380EB00934995 /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424478B23F380EB00934995 /* LeftMenuTableViewController.swift */; };
+		B424478E23F3977200934995 /* ProfileSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424478D23F3977200934995 /* ProfileSelectionViewController.swift */; };
+		B424479023F3A74F00934995 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B424478F23F3A74F00934995 /* RxRelay */; };
+		B424479223F3BAC100934995 /* KakaoLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479123F3BAC100934995 /* KakaoLoginViewModel.swift */; };
+		B424479423F3BB1E00934995 /* KakaoLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479323F3BB1E00934995 /* KakaoLoginState.swift */; };
 		B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44928DC23F2682600D85A48 /* AppDelegate.swift */; };
 		B44928E423F2682600D85A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44928E223F2682600D85A48 /* Main.storyboard */; };
 		B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B44928E523F2682600D85A48 /* MouiLotto.xcdatamodeld */; };
@@ -41,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B424478B23F380EB00934995 /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
+		B424478D23F3977200934995 /* ProfileSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionViewController.swift; sourceTree = "<group>"; };
+		B424479123F3BAC100934995 /* KakaoLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginViewModel.swift; sourceTree = "<group>"; };
+		B424479323F3BB1E00934995 /* KakaoLoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginState.swift; sourceTree = "<group>"; };
 		B44928D923F2682600D85A48 /* MouiLotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouiLotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44928DC23F2682600D85A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B44928E323F2682600D85A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B424479023F3A74F00934995 /* RxRelay in Frameworks */,
 				B449291323F2688700D85A48 /* RxCocoa in Frameworks */,
 				B449291E23F2697D00D85A48 /* KakaoOpenSDK.framework in Frameworks */,
 				B449291623F268DC00D85A48 /* SideMenu in Frameworks */,
@@ -114,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				B449291823F2692600D85A48 /* Networks */,
-				B449291B23F2694100D85A48 /* View Models */,
 				B449291723F2690400D85A48 /* Models */,
+				B449291B23F2694100D85A48 /* View Models */,
 				B449291A23F2693600D85A48 /* Views */,
 				B44928DC23F2682600D85A48 /* AppDelegate.swift */,
 				B44928E223F2682600D85A48 /* Main.storyboard */,
@@ -149,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				B449292523F2705900D85A48 /* AlertExtension.swift */,
+				B424479323F3BB1E00934995 /* KakaoLoginState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +176,8 @@
 			children = (
 				B449292123F26C9700D85A48 /* MainViewController.swift */,
 				B449292323F26D7100D85A48 /* LoginViewController.swift */,
+				B424478B23F380EB00934995 /* LeftMenuTableViewController.swift */,
+				B424478D23F3977200934995 /* ProfileSelectionViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +185,7 @@
 		B449291B23F2694100D85A48 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				B424479123F3BAC100934995 /* KakaoLoginViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -204,6 +218,7 @@
 				B449291023F2688700D85A48 /* RxSwift */,
 				B449291223F2688700D85A48 /* RxCocoa */,
 				B449291523F268DC00D85A48 /* SideMenu */,
+				B424478F23F3A74F00934995 /* RxRelay */,
 			);
 			productName = MouiLotto;
 			productReference = B44928D923F2682600D85A48 /* MouiLotto.app */;
@@ -324,10 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B424479223F3BAC100934995 /* KakaoLoginViewModel.swift in Sources */,
 				B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */,
 				B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */,
+				B424478C23F380EB00934995 /* LeftMenuTableViewController.swift in Sources */,
 				B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */,
 				B449292623F2705900D85A48 /* AlertExtension.swift in Sources */,
+				B424479423F3BB1E00934995 /* KakaoLoginState.swift in Sources */,
+				B424478E23F3977200934995 /* ProfileSelectionViewController.swift in Sources */,
 				B449292223F26C9700D85A48 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,6 +713,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B424478F23F3A74F00934995 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
 		B449291023F2688700D85A48 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */;

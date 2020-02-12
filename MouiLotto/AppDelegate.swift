@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import RxSwift
+import RxCocoa
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,17 +17,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var loginViewController: UIViewController?
     var mainViewController: UIViewController?
+    var profileSelectionViewController: UIViewController?
+    
+    let loginViewModel = KakaoLoginViewModel()
+    var loginState = KakaoLoginState.logout
+    
+    var disposeBag = DisposeBag()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.loginViewModel.loginState$
+            .map( {$0} )
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { loginState in
+                self.loginState = loginState
+                self.reloadRootViewController()
+            })
+            .disposed(by: self.disposeBag)
+        
         setupEntryController()
-        
-        // 로그인,로그아웃 상태 변경 받기
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(AppDelegate.kakaoSessionDidChangeWithNotification),
-                                               name: NSNotification.Name.KOSessionDidChange,
-                                               object: nil)
-        
         reloadRootViewController()
         
         return true
@@ -36,32 +46,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let navigationController = storyboard.instantiateViewController(withIdentifier: "navigator") as! UINavigationController
         let navigationController2 = storyboard.instantiateViewController(withIdentifier: "navigator") as! UINavigationController
+        let navigationController3 = storyboard.instantiateViewController(withIdentifier: "navigator") as! UINavigationController
         
-        let viewController = storyboard.instantiateViewController(withIdentifier: "login") as UIViewController
+        let viewController = storyboard.instantiateViewController(withIdentifier: "login") as! LoginViewController
+        viewController.loginViewModel = self.loginViewModel
         navigationController.pushViewController(viewController, animated: true)
         self.loginViewController = navigationController
         
         let viewController2 = storyboard.instantiateViewController(withIdentifier: "main") as UIViewController
         navigationController2.pushViewController(viewController2, animated: true)
         self.mainViewController = navigationController2
+        
+        let viewController3 = storyboard.instantiateViewController(withIdentifier: "profile") as UIViewController
+        navigationController3.pushViewController(viewController3, animated: true)
+        self.profileSelectionViewController = navigationController3
     }
     
     fileprivate func reloadRootViewController() {
-        guard let isOpened = KOSession.shared()?.isOpen() else {
-            return
-        }
-        if !isOpened {
-            let mainViewController = self.mainViewController as! UINavigationController
-            mainViewController.popToRootViewController(animated: true)
+        switch self.loginState {
+        case .login:
+            self.window?.rootViewController = self.mainViewController
+            break
+        case .selectionProfile:
+            self.window?.rootViewController = self.profileSelectionViewController
+            break
+        default:
+            self.window?.rootViewController = self.loginViewController
         }
         
-//        self.window?.rootViewController = isOpened ? self.mainViewController : self.loginViewController
-        self.window?.rootViewController = self.mainViewController
         self.window?.makeKeyAndVisible()
-    }
-    
-    @objc func kakaoSessionDidChangeWithNotification() {
-        reloadRootViewController()
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
