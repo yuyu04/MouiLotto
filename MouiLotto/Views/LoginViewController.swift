@@ -9,9 +9,9 @@
 import Foundation
 
 class LoginViewController: UIViewController {
-    var loginViewModel: KakaoLoginViewModel!
+    var loginViewModel: KakaoLoginViewModel?
 
     @IBAction func login(_ sender: AnyObject) {
-        loginViewModel.kakaoLogin()
+        loginViewModel?.kakaoLogin()
     }
 }

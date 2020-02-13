@@ -11,6 +11,7 @@ import RxSwift
 
 class KakaoLoginViewModel {
     var loginState$ = BehaviorSubject<KakaoLoginState>(value: KakaoLoginState.logout)
+    var profile = Profile(nickName: "닉네임", email: "")
     
     func kakaoLogin() {
         guard let session = KOSession.shared() else {
@@ -28,17 +29,30 @@ class KakaoLoginViewModel {
                     case Int(KOErrorCancelled.rawValue):
                         break
                     default:
-                        UIAlertController.showMessage(error.description)
+                        self.loginState$.onError(error)
                     }
                 }
             }
             
             KOSessionTask.userMeTask(completion: { (error, user) in
-                guard let user = user,
-                let email = user.account?.email,
-                let nickname = user.nickname else { return }
-                self.loginState$.onNext(KakaoLoginState.selectionProfile)
+                if let user = user {
+                    if let profile = user.account?.profile {
+                        self.profile.nickName = profile.nickname
+                    }
+                    
+                    if let email = user.account?.email {
+                        self.profile.email = email
+                    }
+                    
+                    self.loginState$.onNext(KakaoLoginState.selectionProfile)
+                }
             })
         })
+    }
+    
+    func setFinishNickName(nickname: String) {
+        self.profile.nickName = nickname;
+        
+        self.loginState$.onNext(KakaoLoginState.login)
     }
 }

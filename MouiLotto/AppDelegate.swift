@@ -32,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .subscribe(onNext: { loginState in
                 self.loginState = loginState
                 self.reloadRootViewController()
+            }, onError: { error in
+                UIAlertController.showMessage(error.localizedDescription)
             })
             .disposed(by: self.disposeBag)
         
@@ -57,7 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController2.pushViewController(viewController2, animated: true)
         self.mainViewController = navigationController2
         
-        let viewController3 = storyboard.instantiateViewController(withIdentifier: "profile") as UIViewController
+        let viewController3 = storyboard.instantiateViewController(withIdentifier: "profile") as! ProfileSelectionViewController
+        viewController3.loginViewModel = self.loginViewModel
         navigationController3.pushViewController(viewController3, animated: true)
         self.profileSelectionViewController = navigationController3
     }

@@ -65,6 +65,7 @@
                     <connections>
                         <segue destination="k3e-XK-Tt6" kind="show" id="FAJ-gl-Zf1"/>
                         <segue destination="BYZ-38-t0r" kind="show" id="G9U-k3-x0Y"/>
+                        <segue destination="YRZ-CU-QT3" kind="show" id="X5J-fu-n66"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYa-Gy-9zX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -168,6 +169,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Zg-dr-CAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="216" y="153"/>
+        </scene>
+        <!--Profile Selection View Controller-->
+        <scene sceneID="itG-qm-7Yd">
+            <objects>
+                <viewController storyboardIdentifier="profile" id="YRZ-CU-QT3" customClass="ProfileSelectionViewController" customModule="MouiLotto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DeF-rh-UBg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7r-JD-W3N">
+                                <rect key="frame" x="177" y="747" width="60" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AA" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xMW-k5-c4b">
+                                <rect key="frame" x="107" y="508" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xfm-bY-pFN" firstAttribute="bottom" secondItem="U7r-JD-W3N" secondAttribute="bottom" constant="31" id="9qT-cR-s9T"/>
+                            <constraint firstItem="xMW-k5-c4b" firstAttribute="leading" secondItem="xfm-bY-pFN" secondAttribute="leading" constant="107" id="CJI-Sg-LS3"/>
+                            <constraint firstItem="U7r-JD-W3N" firstAttribute="top" secondItem="xMW-k5-c4b" secondAttribute="bottom" constant="205" id="Szp-hg-sTJ"/>
+                            <constraint firstItem="xfm-bY-pFN" firstAttribute="trailing" secondItem="U7r-JD-W3N" secondAttribute="trailing" constant="177" id="l8r-g9-Sqd"/>
+                            <constraint firstItem="U7r-JD-W3N" firstAttribute="leading" secondItem="xfm-bY-pFN" secondAttribute="leading" constant="177" id="pav-RS-IEE"/>
+                            <constraint firstItem="xfm-bY-pFN" firstAttribute="trailing" secondItem="xMW-k5-c4b" secondAttribute="trailing" constant="107" id="zTg-aG-rDc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xfm-bY-pFN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ym0-Ff-qFE"/>
+                    <connections>
+                        <outlet property="nextButton" destination="U7r-JD-W3N" id="Efs-Ui-TVa"/>
+                        <outlet property="nickName" destination="xMW-k5-c4b" id="w4y-yG-5xq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WHX-Kr-Stw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455.07246376811599" y="855.80357142857144"/>
         </scene>
     </scenes>
 </document>

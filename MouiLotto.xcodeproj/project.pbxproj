@@ -12,6 +12,10 @@
 		B424479023F3A74F00934995 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B424478F23F3A74F00934995 /* RxRelay */; };
 		B424479223F3BAC100934995 /* KakaoLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479123F3BAC100934995 /* KakaoLoginViewModel.swift */; };
 		B424479423F3BB1E00934995 /* KakaoLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479323F3BB1E00934995 /* KakaoLoginState.swift */; };
+		B424479723F4E7A000934995 /* MapleBacon in Frameworks */ = {isa = PBXBuildFile; productRef = B424479623F4E7A000934995 /* MapleBacon */; };
+		B424479923F4EB9E00934995 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479823F4EB9E00934995 /* Profile.swift */; };
+		B424479C23F513FE00934995 /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479A23F513FE00934995 /* Profile+CoreDataClass.swift */; };
+		B424479D23F513FE00934995 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479B23F513FE00934995 /* Profile+CoreDataProperties.swift */; };
 		B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44928DC23F2682600D85A48 /* AppDelegate.swift */; };
 		B44928E423F2682600D85A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44928E223F2682600D85A48 /* Main.storyboard */; };
 		B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B44928E523F2682600D85A48 /* MouiLotto.xcdatamodeld */; };
@@ -50,6 +54,9 @@
 		B424478D23F3977200934995 /* ProfileSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionViewController.swift; sourceTree = "<group>"; };
 		B424479123F3BAC100934995 /* KakaoLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginViewModel.swift; sourceTree = "<group>"; };
 		B424479323F3BB1E00934995 /* KakaoLoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginState.swift; sourceTree = "<group>"; };
+		B424479823F4EB9E00934995 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		B424479A23F513FE00934995 /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B424479B23F513FE00934995 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B44928D923F2682600D85A48 /* MouiLotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouiLotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44928DC23F2682600D85A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B44928E323F2682600D85A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B424479723F4E7A000934995 /* MapleBacon in Frameworks */,
 				B424479023F3A74F00934995 /* RxRelay in Frameworks */,
 				B449291323F2688700D85A48 /* RxCocoa in Frameworks */,
 				B449291E23F2697D00D85A48 /* KakaoOpenSDK.framework in Frameworks */,
@@ -160,6 +168,9 @@
 			children = (
 				B449292523F2705900D85A48 /* AlertExtension.swift */,
 				B424479323F3BB1E00934995 /* KakaoLoginState.swift */,
+				B424479823F4EB9E00934995 /* Profile.swift */,
+				B424479A23F513FE00934995 /* Profile+CoreDataClass.swift */,
+				B424479B23F513FE00934995 /* Profile+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +230,7 @@
 				B449291223F2688700D85A48 /* RxCocoa */,
 				B449291523F268DC00D85A48 /* SideMenu */,
 				B424478F23F3A74F00934995 /* RxRelay */,
+				B424479623F4E7A000934995 /* MapleBacon */,
 			);
 			productName = MouiLotto;
 			productReference = B44928D923F2682600D85A48 /* MouiLotto.app */;
@@ -295,6 +307,7 @@
 			packageReferences = (
 				B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				B449291423F268DC00D85A48 /* XCRemoteSwiftPackageReference "SideMenu" */,
+				B424479523F4E7A000934995 /* XCRemoteSwiftPackageReference "MapleBacon" */,
 			);
 			productRefGroup = B44928DA23F2682600D85A48 /* Products */;
 			projectDirPath = "";
@@ -340,13 +353,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B424479223F3BAC100934995 /* KakaoLoginViewModel.swift in Sources */,
+				B424479923F4EB9E00934995 /* Profile.swift in Sources */,
 				B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */,
+				B424479C23F513FE00934995 /* Profile+CoreDataClass.swift in Sources */,
 				B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */,
 				B424478C23F380EB00934995 /* LeftMenuTableViewController.swift in Sources */,
 				B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */,
 				B449292623F2705900D85A48 /* AlertExtension.swift in Sources */,
 				B424479423F3BB1E00934995 /* KakaoLoginState.swift in Sources */,
 				B424478E23F3977200934995 /* ProfileSelectionViewController.swift in Sources */,
+				B424479D23F513FE00934995 /* Profile+CoreDataProperties.swift in Sources */,
 				B449292223F26C9700D85A48 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,6 +710,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B424479523F4E7A000934995 /* XCRemoteSwiftPackageReference "MapleBacon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JanGorman/MapleBacon.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.11;
+			};
+		};
 		B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -717,6 +741,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
+		};
+		B424479623F4E7A000934995 /* MapleBacon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B424479523F4E7A000934995 /* XCRemoteSwiftPackageReference "MapleBacon" */;
+			productName = MapleBacon;
 		};
 		B449291023F2688700D85A48 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;

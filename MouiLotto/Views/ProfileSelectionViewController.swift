@@ -7,3 +7,27 @@
 //
 
 import Foundation
+import RxSwift
+import MapleBacon
+
+class ProfileSelectionViewController: UIViewController {
+    var loginViewModel: KakaoLoginViewModel?
+    var disposeBag = DisposeBag()
+    
+    @IBOutlet weak var nickName: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    override func viewDidLoad() {
+        self.nextButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+                self?.loginViewModel?.setFinishNickName(nickname: self?.nickName.text ?? "닉네임")
+            })
+            .disposed(by: disposeBag)
+        
+        if let profile = self.loginViewModel?.profile {
+            self.nickName.text = profile.nickName
+        } else {
+            self.nickName.text = "닉네임"
+        }
+    }
+}

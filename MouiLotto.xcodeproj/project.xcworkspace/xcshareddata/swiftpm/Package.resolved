@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "MapleBacon",
+        "repositoryURL": "https://github.com/JanGorman/MapleBacon.git",
+        "state": {
+          "branch": null,
+          "revision": "18f20540a52fad4c179ee46b4f7300666e2f40f5",
+          "version": "5.6.11"
+        }
+      },
+      {
         "package": "RxSwift",
         "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {
