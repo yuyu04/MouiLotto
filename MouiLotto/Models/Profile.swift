@@ -11,4 +11,5 @@ import Foundation
 struct Profile {
     var nickName: String
     var email: String
+    var token: String
 }

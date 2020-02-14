@@ -8,10 +8,11 @@
 
 import Foundation
 import RxSwift
+import CoreData
 
 class KakaoLoginViewModel {
     var loginState$ = BehaviorSubject<KakaoLoginState>(value: KakaoLoginState.logout)
-    var profile = Profile(nickName: "닉네임", email: "")
+    var profile = Profile(nickName: "닉네임", email: "", token: "")
     
     func kakaoLogin() {
         guard let session = KOSession.shared() else {
@@ -48,6 +49,50 @@ class KakaoLoginViewModel {
                 }
             })
         })
+    }
+    
+    func saveProfileCoreData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let userEntity = NSEntityDescription.entity(forEntityName: "Profile", in: managedContext)!
+
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "User")
+             fetchRequest.predicate = NSPredicate(format: "username = %@", "Ankur1")
+             do
+             {
+                 let test = try managedContext.fetch(fetchRequest)
+        
+                     let objectUpdate = test[0] as! NSManagedObject
+                     objectUpdate.setValue("newName", forKey: "username")
+                     objectUpdate.setValue("newmail", forKey: "email")
+                     objectUpdate.setValue("newpassword", forKey: "password")
+                     do{
+                         try managedContext.save()
+                     }
+                     catch
+                     {
+                         print(error)
+                     }
+                 }
+             catch
+             {
+                 print(error)
+             }
+        
+        do {
+            try managedContext.save()
+           
+        } catch let error as NSError {
+            self.loginState$.onNext(KakaoLoginState.logout)
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func deleteProfileCoreData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let userEntity = NSEntityDescription.entity(forEntityName: "Profile", in: managedContext)!
+        
     }
     
     func setFinishNickName(nickname: String) {

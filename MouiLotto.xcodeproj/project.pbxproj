@@ -14,8 +14,11 @@
 		B424479423F3BB1E00934995 /* KakaoLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479323F3BB1E00934995 /* KakaoLoginState.swift */; };
 		B424479723F4E7A000934995 /* MapleBacon in Frameworks */ = {isa = PBXBuildFile; productRef = B424479623F4E7A000934995 /* MapleBacon */; };
 		B424479923F4EB9E00934995 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479823F4EB9E00934995 /* Profile.swift */; };
-		B424479C23F513FE00934995 /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479A23F513FE00934995 /* Profile+CoreDataClass.swift */; };
-		B424479D23F513FE00934995 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479B23F513FE00934995 /* Profile+CoreDataProperties.swift */; };
+		B42447AA23F65F7000934995 /* FetchedResultsControllerControllerEntityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42447A623F65F7000934995 /* FetchedResultsControllerControllerEntityObserver.swift */; };
+		B42447AB23F65F7000934995 /* NSManagedObjectContext+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42447A723F65F7000934995 /* NSManagedObjectContext+Rx.swift */; };
+		B42447AC23F65F7000934995 /* FetchedResultsControllerSectionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42447A823F65F7000934995 /* FetchedResultsControllerSectionObserver.swift */; };
+		B42447AD23F65F7000934995 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42447A923F65F7000934995 /* Persistable.swift */; };
+		B42447AF23F6639E00934995 /* Profile+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42447AE23F6639E00934995 /* Profile+Extension.swift */; };
 		B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44928DC23F2682600D85A48 /* AppDelegate.swift */; };
 		B44928E423F2682600D85A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44928E223F2682600D85A48 /* Main.storyboard */; };
 		B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B44928E523F2682600D85A48 /* MouiLotto.xcdatamodeld */; };
@@ -55,8 +58,11 @@
 		B424479123F3BAC100934995 /* KakaoLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginViewModel.swift; sourceTree = "<group>"; };
 		B424479323F3BB1E00934995 /* KakaoLoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginState.swift; sourceTree = "<group>"; };
 		B424479823F4EB9E00934995 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		B424479A23F513FE00934995 /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B424479B23F513FE00934995 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B42447A623F65F7000934995 /* FetchedResultsControllerControllerEntityObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerControllerEntityObserver.swift; sourceTree = "<group>"; };
+		B42447A723F65F7000934995 /* NSManagedObjectContext+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Rx.swift"; sourceTree = "<group>"; };
+		B42447A823F65F7000934995 /* FetchedResultsControllerSectionObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerSectionObserver.swift; sourceTree = "<group>"; };
+		B42447A923F65F7000934995 /* Persistable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		B42447AE23F6639E00934995 /* Profile+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+Extension.swift"; sourceTree = "<group>"; };
 		B44928D923F2682600D85A48 /* MouiLotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouiLotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44928DC23F2682600D85A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B44928E323F2682600D85A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +76,7 @@
 		B44928FD23F2682900D85A48 /* MouiLottoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouiLottoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B449290123F2682900D85A48 /* MouiLottoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouiLottoUITests.swift; sourceTree = "<group>"; };
 		B449290323F2682900D85A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B449291D23F2697D00D85A48 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = Link/KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		B449291D23F2697D00D85A48 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		B449292123F26C9700D85A48 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B449292323F26D7100D85A48 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B449292523F2705900D85A48 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
@@ -107,6 +113,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B42447A523F65F7000934995 /* RxCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B42447A623F65F7000934995 /* FetchedResultsControllerControllerEntityObserver.swift */,
+				B42447A723F65F7000934995 /* NSManagedObjectContext+Rx.swift */,
+				B42447A823F65F7000934995 /* FetchedResultsControllerSectionObserver.swift */,
+				B42447A923F65F7000934995 /* Persistable.swift */,
+			);
+			path = RxCoreData;
+			sourceTree = "<group>";
+		};
 		B44928D023F2682600D85A48 = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +131,7 @@
 				B44928F523F2682900D85A48 /* MouiLottoTests */,
 				B449290023F2682900D85A48 /* MouiLottoUITests */,
 				B44928DA23F2682600D85A48 /* Products */,
-				B449291C23F2697D00D85A48 /* Frameworks */,
+				B449291C23F2697D00D85A48 /* Link */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,8 +186,7 @@
 				B449292523F2705900D85A48 /* AlertExtension.swift */,
 				B424479323F3BB1E00934995 /* KakaoLoginState.swift */,
 				B424479823F4EB9E00934995 /* Profile.swift */,
-				B424479A23F513FE00934995 /* Profile+CoreDataClass.swift */,
-				B424479B23F513FE00934995 /* Profile+CoreDataProperties.swift */,
+				B42447AE23F6639E00934995 /* Profile+Extension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,12 +217,13 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
-		B449291C23F2697D00D85A48 /* Frameworks */ = {
+		B449291C23F2697D00D85A48 /* Link */ = {
 			isa = PBXGroup;
 			children = (
+				B42447A523F65F7000934995 /* RxCoreData */,
 				B449291D23F2697D00D85A48 /* KakaoOpenSDK.framework */,
 			);
-			name = Frameworks;
+			path = Link;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,15 +371,18 @@
 			files = (
 				B424479223F3BAC100934995 /* KakaoLoginViewModel.swift in Sources */,
 				B424479923F4EB9E00934995 /* Profile.swift in Sources */,
+				B42447AD23F65F7000934995 /* Persistable.swift in Sources */,
 				B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */,
-				B424479C23F513FE00934995 /* Profile+CoreDataClass.swift in Sources */,
 				B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */,
+				B42447AA23F65F7000934995 /* FetchedResultsControllerControllerEntityObserver.swift in Sources */,
+				B42447AB23F65F7000934995 /* NSManagedObjectContext+Rx.swift in Sources */,
 				B424478C23F380EB00934995 /* LeftMenuTableViewController.swift in Sources */,
 				B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */,
 				B449292623F2705900D85A48 /* AlertExtension.swift in Sources */,
 				B424479423F3BB1E00934995 /* KakaoLoginState.swift in Sources */,
 				B424478E23F3977200934995 /* ProfileSelectionViewController.swift in Sources */,
-				B424479D23F513FE00934995 /* Profile+CoreDataProperties.swift in Sources */,
+				B42447AC23F65F7000934995 /* FetchedResultsControllerSectionObserver.swift in Sources */,
+				B42447AF23F6639E00934995 /* Profile+Extension.swift in Sources */,
 				B449292223F26C9700D85A48 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
