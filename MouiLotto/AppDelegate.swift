@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
             .disposed(by: self.disposeBag)
         
+        loginViewModel.findProfileCoreData()
         setupEntryController()
         reloadRootViewController()
         

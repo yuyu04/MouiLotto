@@ -26,6 +26,10 @@ extension Profile : Persistable {
         return "email"
     }
     
+    var identity: String {
+        return "email"
+    }
+    
     init(entity: T) {
         email = entity.value(forKey: "email") as! String
         nickName = entity.value(forKey: "nickname") as! String
