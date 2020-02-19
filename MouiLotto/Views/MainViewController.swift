@@ -13,7 +13,23 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUpNavigationBarTitleImage()
+    }
+    
+    func setUpNavigationBarTitleImage() {
+        let navController = navigationController!
+
+        let image = #imageLiteral(resourceName: "NavigationTitle")
+        let imageView = UIImageView(image: image)
+
+        let bannerWidth = navController.navigationBar.frame.size.width
+        let bannerHeight = navController.navigationBar.frame.size.height
+
+        imageView.frame = CGRect(x: 0, y: 0, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        imageView.center = navController.navigationBar.center
+
+        navigationItem.titleView = imageView
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
