@@ -9,6 +9,9 @@
 import Foundation
 
 class SelectPayTypeViewController: UIViewController {
+    
+    @IBOutlet weak var autoPay: UIButton!
+    @IBOutlet weak var menualPay: UIButton!
 
     @IBAction func close(_ sender: AnyObject) {
         self.dismiss(animated: true)

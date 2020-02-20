@@ -34,6 +34,7 @@
 		B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292323F26D7100D85A48 /* LoginViewController.swift */; };
 		B449292623F2705900D85A48 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292523F2705900D85A48 /* AlertExtension.swift */; };
 		B48E4DC823FD11A60058609D /* SelectPayTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DC723FD11A40058609D /* SelectPayTypeViewController.swift */; };
+		B48E4DCA23FE68FE0058609D /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DC923FE68FD0058609D /* CustomNavigationViewController.swift */; };
 		B49BCF2123F7C597004FCF94 /* LeftMenuProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BCF2023F7C597004FCF94 /* LeftMenuProfileCell.swift */; };
 		B49BCF2323F7C5AA004FCF94 /* LeftMenuButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BCF2223F7C5AA004FCF94 /* LeftMenuButtonCell.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		B449292323F26D7100D85A48 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B449292523F2705900D85A48 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 		B48E4DC723FD11A40058609D /* SelectPayTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPayTypeViewController.swift; sourceTree = "<group>"; };
+		B48E4DC923FE68FD0058609D /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
 		B49BCF2023F7C597004FCF94 /* LeftMenuProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuProfileCell.swift; sourceTree = "<group>"; };
 		B49BCF2223F7C5AA004FCF94 /* LeftMenuButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuButtonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +215,7 @@
 				B424478B23F380EB00934995 /* LeftMenuTableViewController.swift */,
 				B424478D23F3977200934995 /* ProfileSelectionViewController.swift */,
 				B48E4DC723FD11A40058609D /* SelectPayTypeViewController.swift */,
+				B48E4DC923FE68FD0058609D /* CustomNavigationViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				B42447AA23F65F7000934995 /* FetchedResultsControllerControllerEntityObserver.swift in Sources */,
 				B42447AB23F65F7000934995 /* NSManagedObjectContext+Rx.swift in Sources */,
 				B424478C23F380EB00934995 /* LeftMenuTableViewController.swift in Sources */,
+				B48E4DCA23FE68FE0058609D /* CustomNavigationViewController.swift in Sources */,
 				B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */,
 				B449292623F2705900D85A48 /* AlertExtension.swift in Sources */,
 				B424479423F3BB1E00934995 /* KakaoLoginState.swift in Sources */,
