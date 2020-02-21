@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SideMenu
 import RxSwift
 
 class MainViewController: CustomNavigationViewController {
@@ -17,8 +16,8 @@ class MainViewController: CustomNavigationViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let sideMenuNavigationController = segue.destination as? SideMenuNavigationController {
-            sideMenuNavigationController.settings.menuWidth = 300.0
+        if let selectPayTypeController = segue.destination as? SelectPayTypeViewController {
+            selectPayTypeController.delegate = self
         }
     }
 }

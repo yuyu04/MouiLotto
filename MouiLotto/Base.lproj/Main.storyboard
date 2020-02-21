@@ -8,27 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Side Menu Navigation Controller-->
-        <scene sceneID="0vi-wV-mam">
-            <objects>
-                <navigationController navigationBarHidden="YES" id="ZfE-HH-Htk" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="ucw-eu-mAz"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jYi-dn-OEo">
-                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <segue destination="oWo-a4-SSc" kind="relationship" relationship="rootViewController" id="OPx-Af-GQN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vwM-ha-GDt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-338" y="-323"/>
-        </scene>
         <!--MouiLotto-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -125,18 +104,14 @@
                         <viewLayoutGuide key="safeArea" id="cYj-tQ-i1j"/>
                     </view>
                     <navigationItem key="navigationItem" title="MouiLotto" largeTitleDisplayMode="always" id="Ta8-K2-DDg">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="FoM-EQ-ukB">
-                            <connections>
-                                <segue destination="ZfE-HH-Htk" kind="presentation" id="ULl-eQ-sgU"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="FoM-EQ-ukB"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="Ef7-30-rKz"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1107.2463768115942" y="-323.4375"/>
+            <point key="canvasLocation" x="-459" y="-366"/>
         </scene>
         <!--Select Pay Type View Controller-->
         <scene sceneID="JPw-em-hVe">
@@ -152,10 +127,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-0g-SOk">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="showRandomViewController:" destination="syy-2C-mug" eventType="touchUpInside" id="7p2-VZ-0uf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPU-QI-CS0">
                                         <rect key="frame" x="0.0" y="50" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="showMenualViewControoler:" destination="syy-2C-mug" eventType="touchUpInside" id="bwR-Ht-Jgn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qF4-E9-PCP">
                                         <rect key="frame" x="0.0" y="100" width="46" height="30"/>
@@ -175,13 +156,13 @@
                         <viewLayoutGuide key="safeArea" id="q8B-gK-ZaS"/>
                     </view>
                     <connections>
-                        <outlet property="autoPay" destination="4cd-0g-SOk" id="1d0-qv-KBk"/>
-                        <outlet property="menualPay" destination="LPU-QI-CS0" id="eYn-1G-tAi"/>
+                        <segue destination="nRh-qF-f5B" kind="show" id="zFN-jA-szC"/>
+                        <segue destination="KXd-MZ-0ff" kind="show" id="0HA-XL-nUn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GeZ-dr-zYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-328" y="331"/>
+            <point key="canvasLocation" x="-1107" y="422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FZ6-Kq-dk3">
@@ -237,14 +218,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Afq-ke-jXJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1242" y="1288"/>
+            <point key="canvasLocation" x="-1639" y="1284"/>
         </scene>
         <!--Left Menu Table View Controller-->
         <scene sceneID="slU-Y3-IVj">
             <objects>
                 <tableViewController id="oWo-a4-SSc" customClass="LeftMenuTableViewController" customModule="MouiLotto" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3JQ-iU-Oqs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -330,7 +311,6 @@
                                         <connections>
                                             <outlet property="buttonText" destination="jiE-zQ-zHN" id="Kem-vB-YKm"/>
                                             <outlet property="icon" destination="oep-kK-Vat" id="fIL-Xs-fov"/>
-                                            <segue destination="0RO-r3-yJ4" kind="show" id="1cv-dP-GoK"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1y7-eC-gVc">
@@ -370,9 +350,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="J80-WM-Kvt" kind="show" id="6KT-a2-wR5"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="aat-PG-JK3">
                                         <rect key="frame" x="0.0" y="361.5" width="414" height="60"/>
@@ -394,9 +371,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="vf7-f4-PIP" kind="show" id="MCQ-Mn-FCh"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -411,74 +385,61 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Zg-dr-CAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392.75362318840581" y="-323.4375"/>
+            <point key="canvasLocation" x="1396" y="-366"/>
         </scene>
-        <!--View Controller-->
+        <!--Random Pay View Controller-->
         <scene sceneID="PfL-JH-0cz">
             <objects>
-                <viewController id="nRh-qF-f5B" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RandomPay" id="nRh-qF-f5B" customClass="RandomPayViewController" customModule="MouiLotto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nud-aR-ybU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="pvT-Dx-tvB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DJt-eI-iOE"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1e-Hf-5an" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="393" y="331"/>
+            <point key="canvasLocation" x="-88" y="293"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="oUx-HR-DMM">
+        <!--Menual Pay View Controller-->
+        <scene sceneID="Zj4-eO-yBD">
             <objects>
-                <viewController id="vf7-f4-PIP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AJs-Gi-fgY">
+                <viewController storyboardIdentifier="MenualPay" id="KXd-MZ-0ff" customClass="MenualPayViewController" customModule="MouiLotto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dod-97-3SB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="zHd-rs-nNH"/>
+                        <viewLayoutGuide key="safeArea" id="TfY-Sp-YVa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pES-nc-nRJ"/>
+                    <navigationItem key="navigationItem" id="b95-yT-L49"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zsS-pC-BIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXW-Zq-hM7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2420" y="-464"/>
+            <point key="canvasLocation" x="-88" y="942"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="1yI-RN-aGe">
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="0vi-wV-mam">
             <objects>
-                <viewController id="J80-WM-Kvt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UxK-zD-Thu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="jcT-hR-JcX"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="taJ-ZI-OPF"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JzJ-yK-tn0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="ZfE-HH-Htk" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ucw-eu-mAz"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jYi-dn-OEo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="oWo-a4-SSc" kind="relationship" relationship="rootViewController" id="OPx-Af-GQN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwM-ha-GDt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="-979"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Cgs-9S-VBH">
-            <objects>
-                <viewController id="0RO-r3-yJ4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="15Y-tS-fn8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="hYy-Cq-c0o"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HlZ-CW-aWG"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="esL-IJ-LEF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="793" y="-1082"/>
+            <point key="canvasLocation" x="709" y="-366"/>
         </scene>
         <!--Profile Selection View Controller-->
         <scene sceneID="itG-qm-7Yd">
@@ -517,7 +478,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHX-Kr-Stw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-557" y="1288"/>
+            <point key="canvasLocation" x="-955" y="1284"/>
         </scene>
     </scenes>
     <resources>
