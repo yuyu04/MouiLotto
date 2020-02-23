@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import RxSwift
+
+class EventViewModel {
+    var event$ = PublishSubject<String>()
+    
+    
+}

@@ -33,13 +33,13 @@
 		B449292223F26C9700D85A48 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292123F26C9700D85A48 /* MainViewController.swift */; };
 		B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292323F26D7100D85A48 /* LoginViewController.swift */; };
 		B449292623F2705900D85A48 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292523F2705900D85A48 /* AlertExtension.swift */; };
+		B456D61624026CCA0054FB5D /* EventLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D61524026CCA0054FB5D /* EventLineView.swift */; };
+		B456D61824026CF60054FB5D /* EventLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B456D61724026CF60054FB5D /* EventLineView.xib */; };
 		B48E4DC823FD11A60058609D /* SelectPayTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DC723FD11A40058609D /* SelectPayTypeViewController.swift */; };
 		B48E4DCA23FE68FE0058609D /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DC923FE68FD0058609D /* CustomNavigationViewController.swift */; };
 		B48E4DCC23FF4D860058609D /* RandomPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DCB23FF4D850058609D /* RandomPayViewController.swift */; };
 		B48E4DCE23FF4D930058609D /* MenualPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DCD23FF4D930058609D /* MenualPayViewController.swift */; };
-		B48E4DD023FFA1B90058609D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DCF23FFA1B80058609D /* HomeView.swift */; };
-		B48E4DD223FFA2050058609D /* MenuSelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DD123FFA2050058609D /* MenuSelectViewModel.swift */; };
-		B48E4DD423FFA21A0058609D /* Menus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DD323FFA21A0058609D /* Menus.swift */; };
+		B48E4DD223FFA2050058609D /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DD123FFA2050058609D /* EventViewModel.swift */; };
 		B49BCF2123F7C597004FCF94 /* LeftMenuProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BCF2023F7C597004FCF94 /* LeftMenuProfileCell.swift */; };
 		B49BCF2323F7C5AA004FCF94 /* LeftMenuButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BCF2223F7C5AA004FCF94 /* LeftMenuButtonCell.swift */; };
 /* End PBXBuildFile section */
@@ -89,13 +89,13 @@
 		B449292123F26C9700D85A48 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B449292323F26D7100D85A48 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B449292523F2705900D85A48 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		B456D61524026CCA0054FB5D /* EventLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLineView.swift; sourceTree = "<group>"; };
+		B456D61724026CF60054FB5D /* EventLineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventLineView.xib; sourceTree = "<group>"; };
 		B48E4DC723FD11A40058609D /* SelectPayTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPayTypeViewController.swift; sourceTree = "<group>"; };
 		B48E4DC923FE68FD0058609D /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
 		B48E4DCB23FF4D850058609D /* RandomPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPayViewController.swift; sourceTree = "<group>"; };
 		B48E4DCD23FF4D930058609D /* MenualPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenualPayViewController.swift; sourceTree = "<group>"; };
-		B48E4DCF23FFA1B80058609D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		B48E4DD123FFA2050058609D /* MenuSelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSelectViewModel.swift; sourceTree = "<group>"; };
-		B48E4DD323FFA21A0058609D /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
+		B48E4DD123FFA2050058609D /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		B49BCF2023F7C597004FCF94 /* LeftMenuProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuProfileCell.swift; sourceTree = "<group>"; };
 		B49BCF2223F7C5AA004FCF94 /* LeftMenuButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuButtonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,7 +205,6 @@
 				B424479323F3BB1E00934995 /* KakaoLoginState.swift */,
 				B424479823F4EB9E00934995 /* Profile.swift */,
 				B42447AE23F6639E00934995 /* Profile+Extension.swift */,
-				B48E4DD323FFA21A0058609D /* Menus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,6 +219,7 @@
 		B449291A23F2693600D85A48 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B456D61224026C640054FB5D /* CustomView */,
 				B49BCF1F23F7C545004FCF94 /* TableViewCells */,
 				B449292123F26C9700D85A48 /* MainViewController.swift */,
 				B449292323F26D7100D85A48 /* LoginViewController.swift */,
@@ -229,7 +229,6 @@
 				B48E4DC923FE68FD0058609D /* CustomNavigationViewController.swift */,
 				B48E4DCB23FF4D850058609D /* RandomPayViewController.swift */,
 				B48E4DCD23FF4D930058609D /* MenualPayViewController.swift */,
-				B48E4DCF23FFA1B80058609D /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,7 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				B424479123F3BAC100934995 /* KakaoLoginViewModel.swift */,
-				B48E4DD123FFA2050058609D /* MenuSelectViewModel.swift */,
+				B48E4DD123FFA2050058609D /* EventViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -250,6 +249,15 @@
 				B449291D23F2697D00D85A48 /* KakaoOpenSDK.framework */,
 			);
 			path = Link;
+			sourceTree = "<group>";
+		};
+		B456D61224026C640054FB5D /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B456D61524026CCA0054FB5D /* EventLineView.swift */,
+				B456D61724026CF60054FB5D /* EventLineView.xib */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		B49BCF1F23F7C545004FCF94 /* TableViewCells */ = {
@@ -380,6 +388,7 @@
 				B44928EC23F2682900D85A48 /* LaunchScreen.storyboard in Resources */,
 				B44928E923F2682900D85A48 /* Assets.xcassets in Resources */,
 				B44928E423F2682600D85A48 /* Main.storyboard in Resources */,
+				B456D61824026CF60054FB5D /* EventLineView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,12 +414,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48E4DCE23FF4D930058609D /* MenualPayViewController.swift in Sources */,
-				B48E4DD223FFA2050058609D /* MenuSelectViewModel.swift in Sources */,
+				B456D61624026CCA0054FB5D /* EventLineView.swift in Sources */,
+				B48E4DD223FFA2050058609D /* EventViewModel.swift in Sources */,
 				B424479223F3BAC100934995 /* KakaoLoginViewModel.swift in Sources */,
 				B424479923F4EB9E00934995 /* Profile.swift in Sources */,
 				B42447AD23F65F7000934995 /* Persistable.swift in Sources */,
 				B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */,
-				B48E4DD023FFA1B90058609D /* HomeView.swift in Sources */,
 				B49BCF2323F7C5AA004FCF94 /* LeftMenuButtonCell.swift in Sources */,
 				B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */,
 				B49BCF2123F7C597004FCF94 /* LeftMenuProfileCell.swift in Sources */,
@@ -418,7 +427,6 @@
 				B42447AA23F65F7000934995 /* FetchedResultsControllerControllerEntityObserver.swift in Sources */,
 				B42447AB23F65F7000934995 /* NSManagedObjectContext+Rx.swift in Sources */,
 				B424478C23F380EB00934995 /* LeftMenuTableViewController.swift in Sources */,
-				B48E4DD423FFA21A0058609D /* Menus.swift in Sources */,
 				B48E4DCA23FE68FE0058609D /* CustomNavigationViewController.swift in Sources */,
 				B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */,
 				B449292623F2705900D85A48 /* AlertExtension.swift in Sources */,
