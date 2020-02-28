@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import RxSwift
 import RxCocoa
+import SideMenu
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -40,8 +41,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         loginViewModel.findProfileCoreData()
         setupEntryController()
         reloadRootViewController()
+        configureSideMenu()
         
         return true
+    }
+    
+    private func configureSideMenu() {
+        SideMenuController.preferences.basic.menuWidth = 300
+        SideMenuController.preferences.basic.defaultCacheKey = "0"
+        SideMenuController.preferences.basic.direction = .left
     }
     
     // MARK: custom functions
@@ -56,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.pushViewController(viewController, animated: true)
         self.loginViewController = navigationController
         
-        let viewController2 = storyboard.instantiateViewController(withIdentifier: "main") as UIViewController
+        let viewController2 = storyboard.instantiateViewController(withIdentifier: "sidemenu") as UIViewController
         navigationController2.pushViewController(viewController2, animated: true)
         self.mainViewController = navigationController2
         

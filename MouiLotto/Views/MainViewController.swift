@@ -10,17 +10,15 @@ import Foundation
 import RxSwift
 
 class MainViewController: CustomNavigationViewController {
-    @IBOutlet var stackView: UIStackView!
+
+    @IBOutlet weak var eventView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.setUpEventView(eventView)
         
-//        super.setUpViewModel(<#T##eventViewModel: EventViewModel##EventViewModel#>)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        super.setUpEventView(stackView)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

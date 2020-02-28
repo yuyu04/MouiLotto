@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B424478C23F380EB00934995 /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424478B23F380EB00934995 /* LeftMenuTableViewController.swift */; };
 		B424478E23F3977200934995 /* ProfileSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424478D23F3977200934995 /* ProfileSelectionViewController.swift */; };
 		B424479023F3A74F00934995 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B424478F23F3A74F00934995 /* RxRelay */; };
 		B424479223F3BAC100934995 /* KakaoLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424479123F3BAC100934995 /* KakaoLoginViewModel.swift */; };
@@ -28,11 +27,15 @@
 		B449290223F2682900D85A48 /* MouiLottoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449290123F2682900D85A48 /* MouiLottoUITests.swift */; };
 		B449291123F2688700D85A48 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B449291023F2688700D85A48 /* RxSwift */; };
 		B449291323F2688700D85A48 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B449291223F2688700D85A48 /* RxCocoa */; };
-		B449291623F268DC00D85A48 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = B449291523F268DC00D85A48 /* SideMenu */; };
 		B449291E23F2697D00D85A48 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B449291D23F2697D00D85A48 /* KakaoOpenSDK.framework */; };
 		B449292223F26C9700D85A48 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292123F26C9700D85A48 /* MainViewController.swift */; };
 		B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292323F26D7100D85A48 /* LoginViewController.swift */; };
 		B449292623F2705900D85A48 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449292523F2705900D85A48 /* AlertExtension.swift */; };
+		B4511A6D2404F66200CB48F7 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4511A6C2404F66200CB48F7 /* LeftMenuViewController.swift */; };
+		B4511A6F2406144700CB48F7 /* LeftMenuDisableButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4511A6E2406144700CB48F7 /* LeftMenuDisableButtonCell.swift */; };
+		B4511A7424088B1800CB48F7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B4511A7324088B1800CB48F7 /* Moya */; };
+		B4511A7624088B1800CB48F7 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B4511A7524088B1800CB48F7 /* RxMoya */; };
+		B4511A7A24088D5100CB48F7 /* ApiServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4511A7924088D5100CB48F7 /* ApiServer.swift */; };
 		B456D61624026CCA0054FB5D /* EventLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D61524026CCA0054FB5D /* EventLineView.swift */; };
 		B456D61824026CF60054FB5D /* EventLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B456D61724026CF60054FB5D /* EventLineView.xib */; };
 		B48E4DC823FD11A60058609D /* SelectPayTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DC723FD11A40058609D /* SelectPayTypeViewController.swift */; };
@@ -40,7 +43,10 @@
 		B48E4DCC23FF4D860058609D /* RandomPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DCB23FF4D850058609D /* RandomPayViewController.swift */; };
 		B48E4DCE23FF4D930058609D /* MenualPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DCD23FF4D930058609D /* MenualPayViewController.swift */; };
 		B48E4DD223FFA2050058609D /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DD123FFA2050058609D /* EventViewModel.swift */; };
-		B49BCF2123F7C597004FCF94 /* LeftMenuProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BCF2023F7C597004FCF94 /* LeftMenuProfileCell.swift */; };
+		B48E4DD72403901F0058609D /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DD62403901F0058609D /* NoticeViewController.swift */; };
+		B48E4DDA240396E60058609D /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = B48E4DD9240396E60058609D /* SideMenu */; };
+		B48E4DDC2403A6110058609D /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DDB2403A6110058609D /* UINavigationController+Extension.swift */; };
+		B48E4DDE24049A300058609D /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E4DDD24049A300058609D /* SideViewController.swift */; };
 		B49BCF2323F7C5AA004FCF94 /* LeftMenuButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BCF2223F7C5AA004FCF94 /* LeftMenuButtonCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +68,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B424478B23F380EB00934995 /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
 		B424478D23F3977200934995 /* ProfileSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionViewController.swift; sourceTree = "<group>"; };
 		B424479123F3BAC100934995 /* KakaoLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginViewModel.swift; sourceTree = "<group>"; };
 		B424479323F3BB1E00934995 /* KakaoLoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginState.swift; sourceTree = "<group>"; };
@@ -89,6 +94,9 @@
 		B449292123F26C9700D85A48 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B449292323F26D7100D85A48 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B449292523F2705900D85A48 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		B4511A6C2404F66200CB48F7 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		B4511A6E2406144700CB48F7 /* LeftMenuDisableButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuDisableButtonCell.swift; sourceTree = "<group>"; };
+		B4511A7924088D5100CB48F7 /* ApiServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServer.swift; sourceTree = "<group>"; };
 		B456D61524026CCA0054FB5D /* EventLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLineView.swift; sourceTree = "<group>"; };
 		B456D61724026CF60054FB5D /* EventLineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventLineView.xib; sourceTree = "<group>"; };
 		B48E4DC723FD11A40058609D /* SelectPayTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPayTypeViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +104,9 @@
 		B48E4DCB23FF4D850058609D /* RandomPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPayViewController.swift; sourceTree = "<group>"; };
 		B48E4DCD23FF4D930058609D /* MenualPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenualPayViewController.swift; sourceTree = "<group>"; };
 		B48E4DD123FFA2050058609D /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
-		B49BCF2023F7C597004FCF94 /* LeftMenuProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuProfileCell.swift; sourceTree = "<group>"; };
+		B48E4DD62403901F0058609D /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		B48E4DDB2403A6110058609D /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		B48E4DDD24049A300058609D /* SideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
 		B49BCF2223F7C5AA004FCF94 /* LeftMenuButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuButtonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +119,9 @@
 				B424479023F3A74F00934995 /* RxRelay in Frameworks */,
 				B449291323F2688700D85A48 /* RxCocoa in Frameworks */,
 				B449291E23F2697D00D85A48 /* KakaoOpenSDK.framework in Frameworks */,
-				B449291623F268DC00D85A48 /* SideMenu in Frameworks */,
+				B48E4DDA240396E60058609D /* SideMenu in Frameworks */,
+				B4511A7424088B1800CB48F7 /* Moya in Frameworks */,
+				B4511A7624088B1800CB48F7 /* RxMoya in Frameworks */,
 				B449291123F2688700D85A48 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +217,8 @@
 				B424479323F3BB1E00934995 /* KakaoLoginState.swift */,
 				B424479823F4EB9E00934995 /* Profile.swift */,
 				B42447AE23F6639E00934995 /* Profile+Extension.swift */,
+				B48E4DDB2403A6110058609D /* UINavigationController+Extension.swift */,
+				B4511A7924088D5100CB48F7 /* ApiServer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,13 +236,15 @@
 				B456D61224026C640054FB5D /* CustomView */,
 				B49BCF1F23F7C545004FCF94 /* TableViewCells */,
 				B449292123F26C9700D85A48 /* MainViewController.swift */,
+				B4511A6C2404F66200CB48F7 /* LeftMenuViewController.swift */,
 				B449292323F26D7100D85A48 /* LoginViewController.swift */,
-				B424478B23F380EB00934995 /* LeftMenuTableViewController.swift */,
 				B424478D23F3977200934995 /* ProfileSelectionViewController.swift */,
 				B48E4DC723FD11A40058609D /* SelectPayTypeViewController.swift */,
 				B48E4DC923FE68FD0058609D /* CustomNavigationViewController.swift */,
 				B48E4DCB23FF4D850058609D /* RandomPayViewController.swift */,
 				B48E4DCD23FF4D930058609D /* MenualPayViewController.swift */,
+				B48E4DD62403901F0058609D /* NoticeViewController.swift */,
+				B48E4DDD24049A300058609D /* SideViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,8 +279,8 @@
 		B49BCF1F23F7C545004FCF94 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				B49BCF2023F7C597004FCF94 /* LeftMenuProfileCell.swift */,
 				B49BCF2223F7C5AA004FCF94 /* LeftMenuButtonCell.swift */,
+				B4511A6E2406144700CB48F7 /* LeftMenuDisableButtonCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -288,9 +304,11 @@
 			packageProductDependencies = (
 				B449291023F2688700D85A48 /* RxSwift */,
 				B449291223F2688700D85A48 /* RxCocoa */,
-				B449291523F268DC00D85A48 /* SideMenu */,
 				B424478F23F3A74F00934995 /* RxRelay */,
 				B424479623F4E7A000934995 /* MapleBacon */,
+				B48E4DD9240396E60058609D /* SideMenu */,
+				B4511A7324088B1800CB48F7 /* Moya */,
+				B4511A7524088B1800CB48F7 /* RxMoya */,
 			);
 			productName = MouiLotto;
 			productReference = B44928D923F2682600D85A48 /* MouiLotto.app */;
@@ -366,8 +384,9 @@
 			mainGroup = B44928D023F2682600D85A48;
 			packageReferences = (
 				B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				B449291423F268DC00D85A48 /* XCRemoteSwiftPackageReference "SideMenu" */,
 				B424479523F4E7A000934995 /* XCRemoteSwiftPackageReference "MapleBacon" */,
+				B48E4DD8240396E60058609D /* XCRemoteSwiftPackageReference "SideMenu" */,
+				B4511A7224088B1800CB48F7 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = B44928DA23F2682600D85A48 /* Products */;
 			projectDirPath = "";
@@ -417,16 +436,18 @@
 				B456D61624026CCA0054FB5D /* EventLineView.swift in Sources */,
 				B48E4DD223FFA2050058609D /* EventViewModel.swift in Sources */,
 				B424479223F3BAC100934995 /* KakaoLoginViewModel.swift in Sources */,
+				B4511A6F2406144700CB48F7 /* LeftMenuDisableButtonCell.swift in Sources */,
 				B424479923F4EB9E00934995 /* Profile.swift in Sources */,
 				B42447AD23F65F7000934995 /* Persistable.swift in Sources */,
 				B449292423F26D7100D85A48 /* LoginViewController.swift in Sources */,
+				B48E4DDC2403A6110058609D /* UINavigationController+Extension.swift in Sources */,
 				B49BCF2323F7C5AA004FCF94 /* LeftMenuButtonCell.swift in Sources */,
+				B4511A7A24088D5100CB48F7 /* ApiServer.swift in Sources */,
+				B48E4DDE24049A300058609D /* SideViewController.swift in Sources */,
 				B44928DD23F2682600D85A48 /* AppDelegate.swift in Sources */,
-				B49BCF2123F7C597004FCF94 /* LeftMenuProfileCell.swift in Sources */,
 				B48E4DC823FD11A60058609D /* SelectPayTypeViewController.swift in Sources */,
 				B42447AA23F65F7000934995 /* FetchedResultsControllerControllerEntityObserver.swift in Sources */,
 				B42447AB23F65F7000934995 /* NSManagedObjectContext+Rx.swift in Sources */,
-				B424478C23F380EB00934995 /* LeftMenuTableViewController.swift in Sources */,
 				B48E4DCA23FE68FE0058609D /* CustomNavigationViewController.swift in Sources */,
 				B44928E723F2682600D85A48 /* MouiLotto.xcdatamodeld in Sources */,
 				B449292623F2705900D85A48 /* AlertExtension.swift in Sources */,
@@ -434,7 +455,9 @@
 				B424478E23F3977200934995 /* ProfileSelectionViewController.swift in Sources */,
 				B42447AC23F65F7000934995 /* FetchedResultsControllerSectionObserver.swift in Sources */,
 				B42447AF23F6639E00934995 /* Profile+Extension.swift in Sources */,
+				B4511A6D2404F66200CB48F7 /* LeftMenuViewController.swift in Sources */,
 				B48E4DCC23FF4D860058609D /* RandomPayViewController.swift in Sources */,
+				B48E4DD72403901F0058609D /* NoticeViewController.swift in Sources */,
 				B449292223F26C9700D85A48 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,12 +821,20 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		B449291423F268DC00D85A48 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+		B4511A7224088B1800CB48F7 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.4.6;
+				minimumVersion = 14.0.0;
+			};
+		};
+		B48E4DD8240396E60058609D /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kukushi/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -829,9 +860,19 @@
 			package = B449290F23F2688700D85A48 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		B449291523F268DC00D85A48 /* SideMenu */ = {
+		B4511A7324088B1800CB48F7 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B449291423F268DC00D85A48 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			package = B4511A7224088B1800CB48F7 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		B4511A7524088B1800CB48F7 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4511A7224088B1800CB48F7 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		B48E4DD9240396E60058609D /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B48E4DD8240396E60058609D /* XCRemoteSwiftPackageReference "SideMenu" */;
 			productName = SideMenu;
 		};
 /* End XCSwiftPackageProductDependency section */

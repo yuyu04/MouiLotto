@@ -1,15 +1,15 @@
 //
-//  LeftMenuButtonCell.swift
+//  LeftMenuDisableButtonCell.swift
 //  MouiLotto
 //
-//  Created by sungju Yun on 2020/02/15.
+//  Created by sungju Yun on 2020/02/26.
 //  Copyright © 2020 SungJu. All rights reserved.
 //
 
 import Foundation
 
-class LeftMenuButtonCell: UITableViewCell {
-    @IBOutlet weak var icon: UIImageView!
+class LeftMenuDisableButtonCell: UITableViewCell {
+    @IBOutlet weak var separate: UIImageView!
     @IBOutlet weak var buttonText: UILabel!
     
     required init?(coder: NSCoder) {

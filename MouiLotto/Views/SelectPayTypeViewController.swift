@@ -14,7 +14,7 @@ class SelectPayTypeViewController: UIViewController {
     func showViewController(_ viewControllerName: String) {
         let viewController = self.storyboard!.instantiateViewController(withIdentifier: viewControllerName)
         self.dismiss(animated: true) { () -> Void in
-            self.delegate?.navigationController?.pushViewController(viewController, animated: true)
+            self.delegate?.sideMenuController?.setContentViewController(to: viewController)
         }
     }
     

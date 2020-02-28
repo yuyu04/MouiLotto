@@ -2,12 +2,39 @@
   "object": {
     "pins": [
       {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "b02c4ee7f1659090f7ac543c022f922beeb04bc6",
+          "version": "5.0.2"
+        }
+      },
+      {
         "package": "MapleBacon",
         "repositoryURL": "https://github.com/JanGorman/MapleBacon.git",
         "state": {
           "branch": null,
           "revision": "18f20540a52fad4c179ee46b4f7300666e2f40f5",
           "version": "5.6.11"
+        }
+      },
+      {
+        "package": "Moya",
+        "repositoryURL": "https://github.com/Moya/Moya.git",
+        "state": {
+          "branch": null,
+          "revision": "b3e5a233e0d85fd4d69f561c80988590859c7dee",
+          "version": "14.0.0"
+        }
+      },
+      {
+        "package": "ReactiveSwift",
+        "repositoryURL": "https://github.com/Moya/ReactiveSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "f195d82bb30e412e70446e2b4a77e1b514099e88",
+          "version": "6.1.0"
         }
       },
       {
@@ -21,11 +48,11 @@
       },
       {
         "package": "SideMenu",
-        "repositoryURL": "https://github.com/jonkykong/SideMenu.git",
+        "repositoryURL": "https://github.com/kukushi/SideMenu.git",
         "state": {
           "branch": null,
-          "revision": "fb25017bc7238145c4d6405255c3aeaa7993b4c7",
-          "version": "6.4.6"
+          "revision": "082692aea7fa5eb13e09d55cb34b05067a20fcae",
+          "version": "2.0.4"
         }
       }
     ]

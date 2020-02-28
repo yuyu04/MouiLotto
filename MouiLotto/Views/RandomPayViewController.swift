@@ -9,5 +9,10 @@
 import Foundation
 
 class RandomPayViewController: CustomNavigationViewController {
+    @IBOutlet weak var eventView: UIView!
     
+    override func viewDidLoad() {
+       super.viewDidLoad()
+       super.setUpEventView(eventView)
+   }
 }
