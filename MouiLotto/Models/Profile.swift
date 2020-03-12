@@ -9,6 +9,7 @@
 import Foundation
 
 struct Profile {
+    var icon: String
     var nickName: String
     var email: String
     var token: String

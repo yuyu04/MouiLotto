@@ -50,6 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SideMenuController.preferences.basic.menuWidth = 300
         SideMenuController.preferences.basic.defaultCacheKey = "0"
         SideMenuController.preferences.basic.direction = .left
+        SideMenuController.preferences.basic.enablePanGesture = false
     }
     
     // MARK: custom functions

@@ -12,7 +12,7 @@ import CoreData
 
 class KakaoLoginViewModel {
     var loginState$ = BehaviorSubject<KakaoLoginState>(value: KakaoLoginState.logout)
-    var profile = Profile(nickName: "닉네임", email: "", token: "")
+    var profile = Profile(icon: "", nickName: "닉네임", email: "", token: "")
     
     func kakaoLogin() {
         guard let session = KOSession.shared() else {
@@ -61,6 +61,7 @@ class KakaoLoginViewModel {
             let result = try managedContext.fetch(fetchRequest)
             if result.count > 0 {
                 let user = result[0] as! NSManagedObject
+                self.profile.icon = user.value(forKey: "icon") as! String
                 self.profile.email = user.value(forKey: "email") as! String
                 self.profile.nickName = user.value(forKey: "name") as! String
                 self.profile.token = user.value(forKey: "token") as! String
@@ -87,6 +88,7 @@ class KakaoLoginViewModel {
                 user = NSManagedObject(entity: userEntity, insertInto: managedContext)
             }
             
+            user.setValue(self.profile.icon, forKey: "icon")
             user.setValue(self.profile.email, forKey: "email")
             user.setValue(self.profile.nickName, forKey: "name")
             user.setValue(self.profile.token, forKey: "token")

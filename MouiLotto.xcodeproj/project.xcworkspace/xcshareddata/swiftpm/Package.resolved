@@ -38,6 +38,15 @@
         }
       },
       {
+        "package": "RxDataSources",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxDataSources.git",
+        "state": {
+          "branch": null,
+          "revision": "a18cee01c9ee55f04d0c7eb15c77a96c3648c88e",
+          "version": "4.0.1"
+        }
+      },
+      {
         "package": "RxSwift",
         "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {
@@ -51,8 +60,8 @@
         "repositoryURL": "https://github.com/kukushi/SideMenu.git",
         "state": {
           "branch": null,
-          "revision": "082692aea7fa5eb13e09d55cb34b05067a20fcae",
-          "version": "2.0.4"
+          "revision": "17a661eb76d3385a76688acf842a24f641f913fd",
+          "version": "2.0.5"
         }
       }
     ]

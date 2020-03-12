@@ -15,10 +15,14 @@ class CustomNavigationViewController: UIViewController {
     
     var eventViewModel: EventViewModel? = nil
     let eventLabel = UILabel()
+    
+    var moneyView = UIView()
+    var moneyLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpNavigationBarTitleImage()
+        setUpCheckTotalMoney()
         setUpNavigationBarButton()
     }
 
@@ -79,13 +83,50 @@ class CustomNavigationViewController: UIViewController {
         navigationItem.leftBarButtonItem = nil;
         navigationItem.hidesBackButton = true
         
-        let leftImage = #imageLiteral(resourceName: "NavigationLeftButton")
-        let leftButton = UIBarButtonItem(image: leftImage, style: .plain, target: self, action: #selector(sidemenuOpen(sender:)))
+        let leftImage = #imageLiteral(resourceName: "NavigationLeftButton").withRenderingMode(.alwaysOriginal)
+        let leftButton = UIBarButtonItem(image: leftImage, style: .plain, target: self, action: #selector(sideMenuOpen(sender:)))
         navigationItem.leftBarButtonItem = leftButton
         
+        let rightImage = #imageLiteral(resourceName: "adjustment_case2_balance").withRenderingMode(.alwaysOriginal)
+        let rightButton = UIBarButtonItem(image: rightImage, style: .plain, target: self, action: #selector(checkCurrentTotalMoney(sender:)))
+        navigationItem.rightBarButtonItem = rightButton
     }
     
-    @objc func sidemenuOpen(sender: UIBarButtonItem) {
+    func setUpCheckTotalMoney() {
+        let imageView = UIImageView(image: UIImage(named: "adjustment_case2_goldbar")! )
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        moneyView.addSubview(imageView)
+        moneyView.addSubview(moneyLabel)
+        
+        imageView.leadingAnchor.constraint(equalTo: moneyView.leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: moneyView.trailingAnchor).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: moneyView.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: moneyView.centerYAnchor).isActive = true
+        
+        moneyLabel.text = "10000"
+        moneyLabel.translatesAutoresizingMaskIntoConstraints = false
+        moneyLabel.centerXAnchor.constraint(equalTo: moneyView.centerXAnchor).isActive = true
+        moneyLabel.centerYAnchor.constraint(equalTo: moneyView.centerYAnchor).isActive = true
+        moneyLabel.widthAnchor.constraint(equalTo: moneyView.widthAnchor).isActive = true
+        moneyLabel.textAlignment = .center
+        
+        moneyView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(moneyView)
+        
+        moneyView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -15).isActive = true
+        moneyView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 70).isActive = true
+        moneyView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.25).isActive = true
+        moneyView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.05).isActive = true
+        
+        moneyView.isHidden = true
+    }
+    
+    @objc func sideMenuOpen(sender: UIBarButtonItem) {
         sideMenuController?.revealMenu()
+    }
+    
+    @objc func checkCurrentTotalMoney(sender: UIBarButtonItem) {
+        moneyView.isHidden = !moneyView.isHidden
     }
 }

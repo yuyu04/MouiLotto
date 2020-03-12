@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenu
+import RxSwift
 
 class LeftMenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
@@ -17,11 +18,23 @@ class LeftMenuViewController: UIViewController {
             tableView.separatorStyle = .none
         }
     }
-        
+    
+    let mainPageViewModel = MainPageViewModel()
+    let disposeBag = DisposeBag()
+    
     @IBOutlet weak var selectionMenuTrailingConstraint: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setSideMenuControllerCache()
+        mainPageViewModel.status$
+            .asObservable()
+            .subscribe(onNext: { [weak self] status in
+                if (self?.sideMenuController?.currentCacheIdentifier() == nil && status == .purchase) { return }
+                
+                self?.sideMenuController?.setContentViewController(with: status.rawValue, animated: false)
+            })
+            .disposed(by: disposeBag)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -32,6 +45,9 @@ class LeftMenuViewController: UIViewController {
     }
     
     func setSideMenuControllerCache() {
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "PurchaseHistory")
+        }, with: MainPageStatus.history.rawValue)
 //        sideMenuController?.cache(viewControllerGenerator: {
 //            self.storyboard?.instantiateViewController(withIdentifier: "RandomPay")
 //        }, with: "6")
@@ -45,7 +61,7 @@ class LeftMenuViewController: UIViewController {
 
 extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,9 +77,9 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch row {
         case 0:
-            cell?.buttonText.text = "홈"
+            cell?.buttonText.text = "공지사항"
         case 1:
-            cell?.buttonText?.text = "공지사항"
+            cell?.buttonText?.text = "회원정보수정"
         case 2:
             disableCell?.buttonText?.text = "모의로또"
             disableCell?.selectionStyle = .none;
@@ -71,6 +87,8 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
             cell?.buttonText?.text = "구매내역"
         case 4:
             cell?.buttonText?.text = "환전하기"
+        case 5:
+            cell?.buttonText?.text = "명예의전당"
         default:
             cell?.buttonText?.text = ""
         }
@@ -87,9 +105,18 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch row {
         case 0:
-            sideMenuController?.setContentViewController(with: "0", animated: false)
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "NoticeNavigation")
+            sideMenuController?.setContentViewController(to: viewController)
+        case 3:
+            sideMenuController?.setContentViewController(with: "\(row)", animated: false)
+        case 4:
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "RefundNavigation")
+            sideMenuController?.setContentViewController(to: viewController)
+        case 5:
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "RankingNavigation")
+            sideMenuController?.setContentViewController(to: viewController)
         default:
-            sideMenuController?.hideMenu()
+            break
         }
         
         sideMenuController?.hideMenu()

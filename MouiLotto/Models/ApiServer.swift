@@ -62,14 +62,15 @@ extension ApiServer: TargetType {
     }
     
     var task: Task {
-        switch self {
-        case .mainPageEvents:
-          // 3
-          return .requestParameters(
-            parameters: [
-              "format": "comic",
-            encoding: URLEncoding.default)
-        }
+        return .requestPlain
+//        switch self {
+//        case .mainPageEvents:
+//          // 3
+//          return .requestParameters(
+//            parameters: [
+//              "format": "comic",
+//            encoding: URLEncoding.default)
+//        }
     }
     
     var parameterEncoding: ParameterEncoding {

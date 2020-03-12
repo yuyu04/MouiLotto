@@ -14,6 +14,7 @@ class ProfileSelectionViewController: UIViewController {
     var loginViewModel: KakaoLoginViewModel?
     var disposeBag = DisposeBag()
     
+    @IBOutlet weak var icon: UIButton!
     @IBOutlet weak var nickName: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
